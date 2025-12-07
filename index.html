@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Potholes in Columbia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    nav {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      gap: 15px;
+    }
+    nav button {
+      background: #555;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    nav button:hover {
+      background: #777;
+    }
+    .section {
+      display: none;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('articles')">Articles</button>
+    <button onclick="showSection('sources')">Sources</button>
+  </nav>
+
+  <div id="home" class="section">
+    <h2>Welcome!</h2>
+    <p>I am here to answer one question: <strong>Are speed bumps in Columbia really necessary?</strong></p>
+    <p>check out the article tab for a deep dive!</p>
+  </div>
+
+  <div id="articles" class="section">
+    <h2>Article</h2>
+
+    <h3>Introduction</h3>
+    <p>Every morning, my short drive to campus in Columbia, Missouri feels more like an obstacle course than a commute. In less than two miles, I am forced to slow down and roll over nine separate speed bumps, some of them spaced barely a hundred feet apart. What should be a quick, uneventful drive becomes a jerky, frustrating crawl that tests both my patience and my car's suspension. The city's apparent obsession with installing speed bumps seems to have gone beyond reason. While these bumps are meant to encourage safer driving, their excessive use across Columbia raises an important question: <strong>Are they actually making our streets safer, or just making them unbearable?</strong></p>
+
+    <h3>Purpose of Speed Bumps</h3>
+    <p>Speed bumps are one of the most common traffic calming tools used by cities to reduce speeding in residential neighborhoods. Columbia's Public Works department explains that it provides traffic calming solutions where appropriate to influence driver behavior and create more livable streets. Residents sometimes support these measures initially—ABC17 News quoted a resident who said the bumps on her street "are doing wonders"—and the city invested around $72,000 in recent projects to install more bumps. However, good intentions do not always lead to good results.</p>
+
+    <h3>Problems Caused by Excessive Speed Bumps</h3>
+    <p>Although bumps reduce speed at the moment of crossing, studies show mixed effects on long-term safety and traffic flow. Columbia’s overuse may be creating new problems. Drivers face frustration from constant slowing, increased commute times, and repeated impacts that can damage suspensions, misalign wheels, and increase tire wear. Emergency vehicles face delays—about ten seconds per bump, according to a fire official. Noise and emissions also rise due to stop-and-go driving.</p>
+
+    <h3>Community Opinions</h3>
+    <p>Local attitudes are split. Some residents want more bumps; others complain there are already too many. Research indicates that bumps often cause drivers to slow only at the bump and then speed up again, creating inconsistent speed patterns rather than sustained safety. Some studies suggest the benefits are overstated, and drivers quickly adapt or change routes.</p>
+
+    <h3>Better Alternatives</h3>
+    <p>Better alternatives exist: raised intersections, speed cushions, narrowed lanes, traffic circles, and digital speed feedback signs. The Federal Highway Administration recommends analyzing local data and gathering public input before installing traffic-calming devices. Other cities have adopted speed cushions and raised crosswalks to improve safety without hindering emergency response or causing excessive vehicle wear.</p>
+
+    <h3>Conclusion</h3>
+    <p>Columbia’s speed bumps may have begun with good intentions, but their overuse has created frustration, inefficiency, and potential safety risks. Real traffic solutions require thoughtful planning, evidence, and targeted measures—not blanket installations across entire neighborhoods.</p>
+</div>
+
+  <div id="sources" class="section">
+    <h2>Sources</h2>
+    <ul>
+      <li>ABC17 News Staff. “Columbia Residents Pleased with Addition of Speed Bumps.” ABC17 News, 10 Aug. 2024.</li>
+      <li>CheapInsurance.com Staff. “Speed Bumps and Physical Traffic Calming Devices Don’t Work: Exploring the Evidence.”</li>
+      <li>City of Columbia. “Neighborhood Traffic Management.” City of Columbia Public Works.</li>
+      <li>Federal Highway Administration. “Speed Management Countermeasures: More than Just Speed Humps.”</li>
+      <li>FireRescue1 Staff. “Fire Official Ties Speed Humps to Response Delays.” FireRescue1.</li>
+      <li>Radarsign. “Why Municipalities Are Moving Away from Speed Humps.”</li>
+      <li>Reddit User. “Speed Bumps.” r/columbiamo, 2025.</li>
+      <li>Streetwise Journal Staff. “The Impact of Speed Bumps on Traffic Safety: Key Insights.”</li>
+      <li>Unimat Traffic. “Speed Bumps and Traffic Calming Techniques.”</li>
+      <li>Unimat Traffic. “Speed Bumps and Vehicle Damage: Mitigating Risks and Ensuring Safety.”</li>
+    </ul>
+  </div>
+
+<script>
+  function showSection(id) {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(sec => sec.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+  }
+
+  // Show home by default
+  showSection('home');
+</script>
+
+</body>
+</html>
